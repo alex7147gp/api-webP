@@ -1,12 +1,14 @@
 import * as express from 'express';
 import { Request, Response } from 'express';
 
-import cors from 'cors';
+import * as cors from 'cors';
 import initialState from './initialState';
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin: "https://shop-webp.netlify.app"
+}));
 
 
 const port = process.env.PORT || 3005;
