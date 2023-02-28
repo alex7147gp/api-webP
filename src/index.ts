@@ -6,7 +6,7 @@ import initialState from './initialState';
 
 const app = express();
 
-const app.use(cors());
+app.use(cors());
 
 
 const port = process.env.PORT || 3005;
